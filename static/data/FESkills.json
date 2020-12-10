@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "title": "CSS",
+      "image": "../images/css3.jpg"
+    },
+    {
+      "id": 2,
+      "title": "HTML",
+      "image": "../images/html5.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Javascript",
+      "image": "../images/javascript-4.jpg"
+    },
+    {
+      "id": 4,
+      "title": "React",
+      "image": "../images/react-2.jpg"
+    },
+    {
+      "id": 5,
+      "title": "jQuery",
+      "image": "../images/jquery.jpg"
+    },
+    {
+      "id": 6,
+      "title": "handlebars",
+      "image": "../images/handlebars-1.jpg"
+    }
+  ]
+  

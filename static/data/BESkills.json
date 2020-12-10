@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "title": "Node",
+      "image": "../images/node-js-logo.jpg"
+    },
+    {
+      "id": 2,
+      "title": "mongoDB",
+      "image": "../images/mongodb.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Express",
+      "image": "../images/express-109.svg"
+    },
+    {
+      "id": 4,
+      "title": "MySQL",
+      "image": "../images/mysql.jpg"
+    },
+    {
+      "id": 5,
+      "title": "NPM",
+      "image": "../images/npm.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Python",
+      "image": "../images/python.jpg"
+    }
+  ]
+  

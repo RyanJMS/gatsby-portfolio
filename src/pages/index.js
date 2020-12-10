@@ -1,5 +1,13 @@
 import React from "react"
+import Drawer from '../components/drawer'
+import '../styles/style.css'
 
-export default function Home() {
-  return <div>Hello world!</div>
+const Home = () => {
+  return(
+    <div>
+      <Drawer />
+    </div>
+  )
 }
+ 
+export default Home

@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "image": "../images/employee-directory.png",
+      "title": "Employee Directory",
+      "description": "This is an employee directory built with React, and including live search functionality.",
+      "repoLink": "https://github.com/RyanJMS/employee-directory",
+      "liveLink": "https://ryanjms.github.io/employee-directory/"
+    },
+    {
+      "id": 2,
+      "image": "../images/note-taker.png",
+      "title": "Note Taker",
+      "description": "This is a simple note taking app, built with Javascript, Express, and Node in mind -- Hosted on Heroku",
+      "repoLink": "https://github.com/RyanJMS/hw11_Note-Taker",
+      "liveLink": "https://note-taker-rmjs.herokuapp.com/"
+    },
+    {
+      "id": 3,
+      "image": "../images/workout-tracker.png",
+      "title": "Workout Tracker",
+      "description": "This is workout tracker built using nodeJS, mongoDB, and express. The front-end for this assignment was provided by BCS.",
+      "repoLink": "https://github.com/RyanJMS/Workout-Tracker",
+      "liveLink": "https://polar-badlands-11589.herokuapp.com/?id=5efe3a8d718dcd001744d6e8"
+    },
+    {
+      "id": 4,
+      "image": "../images/coronapp.png",
+      "title": "CoronApp",
+      "description": "This application will provide users with a curated feed of COVID-19-related news and social media content.",
+      "repoLink": "https://github.com/mjsouthcott/CoronApp",
+      "liveLink": "https://mjsouthcott.github.io/CoronApp/"
+    },
+    {
+      "id": 5,
+      "image": "../images/weather-dashboard.png",
+      "title": "Weather App",
+      "description": "This is a Weather Dashboard built with HTML,CSS, Javascript, and the OpenWeatherMap API.",
+      "repoLink": "https://github.com/RyanJMS/weatherApp_hw6",
+      "liveLink": "https://ryanjms.github.io/weatherApp_hw6/"
+    },
+    {
+      "id": 6,
+      "image": "../images/half-time.png",
+      "title": "Half-Time",
+      "description": "This is a fantasy soccer app, as well as a general soccer hub. Built with React, and various API's.",
+      "repoLink": "https://github.com/diegolehyt/Half-Time",
+      "liveLink": "https://still-taiga-30261.herokuapp.com/"
+    }
+  ]
