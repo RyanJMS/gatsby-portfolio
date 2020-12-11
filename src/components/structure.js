@@ -1,9 +1,9 @@
 import React from "react";
-import About from "../pages/About";
-import Skills from "../pages/Skills";
-import Projects from "../pages/Projects";
-import Contact from "../pages/Contact";
-import Education from '../pages/Education'
+import About from "../pages/about";
+import Skills from "../pages/skills";
+import Projects from "../pages/projects";
+import Contact from "../pages/contact";
+import Education from '../pages/education'
 import { Container } from "@material-ui/core";
 
 export default function Structure() {

@@ -1,13 +1,12 @@
 import React from "react";
-import PageHeader from '../components/page-header'
+import {Typography} from '@material-ui/core'
 import AboutCard from "../components/about-card";
 
 export default function About() {
   return (
     <div id="about">
-      <PageHeader title={"Welcome!"}>
+      <Typography variant="h1">Welcome to my Portfolio!</Typography>
       <AboutCard />
-      </PageHeader>
     </div>
   );
 }
