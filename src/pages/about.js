@@ -5,7 +5,7 @@ import AboutCard from "../components/about-card";
 export default function About() {
   return (
     <div id="about">
-      <Typography variant="h1">Welcome to my Portfolio!</Typography>
+      <Typography variant="h1">Welcome!</Typography>
       <AboutCard />
     </div>
   );
