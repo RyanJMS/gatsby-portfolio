@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Grid  } from "@material-ui/core";
 import CardStyle from './card-style'
-import ProfilePic from '../../static/images/git.jpg'
+import AboutImage from '../../static/images/aboutcard.jpg'
 
 export default function AboutCard() {
 
@@ -9,7 +9,7 @@ export default function AboutCard() {
     <CardStyle>
       <Grid container alignItems={'center'}>
       <Grid item xs={6} sm={6} m={6}>
-      <img style={{ height: '80%', width: '75%', borderRadius: '50%'}} alt="Ryan Schock" src={ProfilePic}/>
+      <img style={{ height: '80%', width: '75%', borderRadius: '50%'}} alt="Ryan Schock" src={AboutImage}/>
       </Grid>
       <Grid item xs={6} sm={6} m={6}>
       <Typography variant="body1" color="textPrimary" component="p">
