@@ -12,7 +12,7 @@ export default function AboutCard() {
       <img style={{ height: '80%', width: '75%', borderRadius: '50%'}} alt="Ryan Schock" src={AboutImage}/>
       </Grid>
       <Grid item xs={6} sm={6} m={6}>
-      <Typography variant="body1" color="textPrimary" component="p">
+      <Typography variant="body1" color="textPrimary" component="p" align="center">
           Welcome! I'm Ryan Schock, a web developer based out of Ottawa,
           Ontario, Canada. I have completed a coding bootcamp through Carleton
           University, in Full Stack. I am very comfortable with the MERN stack,

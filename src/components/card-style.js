@@ -15,8 +15,8 @@ export default function CardStyle(props) {
     return (
         <div className={classes.root}>
             <Card height={props.height} width={props.width}>
-            <CardHeader title={props.title} />
-            <CardContent>
+            <CardHeader align="center" title={props.title} />
+            <CardContent align="center">
             {props.children}
             </CardContent>
             </Card>

@@ -31,7 +31,7 @@ export default function Contact() {
       <Grid container spacing={3} alignItems="center" direction="row"
   justify="center">
         <Grid item xs={12} sm={6}>
-           <img style={{ height: '50%', width: '50%', borderRadius: '50%' }} alt="Ryan Schock" src={ProfilePic}/>
+           <img style={{ height: '50%', width: '50%', borderRadius: '50%' }} align="right" alt="Ryan Schock" src={ProfilePic}/>
         </Grid>
         <Grid item xs={12} sm={6}>
   <Paper className={classes.paper}>
@@ -42,20 +42,20 @@ export default function Contact() {
         Mobile: <a href='tel:6138660322'>613-866-0322</a>
       </Typography>
       <Typography variant="subtitle1" color="textPrimary" align="left">
-      Resume: <a href={Resume} target='_blank'>Resume2020</a>
+      Resume: <a href={Resume} target='_blank' rel="noreferrer">Resume2020</a>
       </Typography>
     </Paper>
         </Grid>
         <Grid item xs={12} sm={12}>
           <Paper className={classes.paper}>
           <Button href="https://www.codewars.com/users/RyanJMS"
-            target="_blank"  item xs={4} sm={4}>
+            target="_blank"  rel="noreferrer" item xs={4} sm={4}>
             <img  alt='codewars' src={CodeWars} />
             </Button>
-            <Button target='_blank' href="https://www.linkedin.com/in/ryanjmschock/" item xs={4} sm={4}>
+            <Button target='_blank' href="https://www.linkedin.com/in/ryanjmschock/" rel="noreferrer" item xs={4} sm={4}>
             <img alt='linkedin' src={Linkedin}  />
             </Button>
-            <Button item xs={4} sm={4} target='_blank' href="https://github.com/ryanjms">
+            <Button item xs={4} sm={4} target='_blank' rel="noreferrer" href="https://github.com/ryanjms">
             <img alt='github' src={Github} />
             </Button>
           </Paper>

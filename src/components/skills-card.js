@@ -13,12 +13,12 @@ export default function SkillsCard({ title, image }) {
     <div>
       <CardStyle>
       <Card height="30%" width="30%">
-        <CardHeader>{title}</CardHeader>
+        <CardHeader align="center">{title}</CardHeader>
         <CardContent>
-          <CardMedia>
+          <CardMedia align="center">
             <img src={image} alt={title} height="75%" width="75%" />
           </CardMedia>
-          <Typography height="25%" width="15%" variant="h6">
+          <Typography  align="center" height="25%" width="15%" variant="h6">
             {title}
           </Typography>
         </CardContent>

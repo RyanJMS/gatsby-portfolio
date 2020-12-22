@@ -11,6 +11,7 @@ export default function Structure() {
     <div>
       <Container maxWidth="lg">
         <br />
+        <br />
         <br id="about" />
         <About />
         <br />

@@ -28,7 +28,7 @@ export default function PageHeader(props) {
       >
         <Grid justify="center" item xs={12}>
           <Box pb={4} pt={6} justify="center">
-            <Typography variant="h3" style={{ fontWeight: "bold" }}>
+            <Typography align="center" variant="h3" style={{ fontWeight: "bold" }}>
               {props.title}
             </Typography>
           </Box>

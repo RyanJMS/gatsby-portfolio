@@ -27,19 +27,20 @@ export default function Project() {
         {projectData.map((project) => (
           <Grid item xs={12} sm={6}>
             <Card>
-              <CardMedia>
-                <Box pt={2}>
+              <CardMedia align="center">
+                <Box pt={2}> 
                   <img
                     src={project.image}
                     alt="projectImage"
                     height="50%"
                     width="50%"
+                    
                   />
                 </Box>
               </CardMedia>
-              <CardHeader title={project.title} />
+              <CardHeader align="center" title={project.title} />
               <CardContent>
-                <Typography variant="body2" color="textPrimary" component="p">
+                <Typography align="center" variant="body2" color="textPrimary" component="p">
                   {project.description}
                 </Typography>
               </CardContent>
