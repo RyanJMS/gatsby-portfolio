@@ -5,12 +5,12 @@
       "image": "../images/node-js-logo.jpg"
     },
     {
-      "id": 2,
+      "id": 5,
       "title": "mongoDB",
       "image": "../images/mongodb.jpg"
     },
     {
-      "id": 3,
+      "id": 6,
       "title": "Express",
       "image": "../images/express-109.svg"
     },
@@ -20,12 +20,12 @@
       "image": "../images/mysql.jpg"
     },
     {
-      "id": 5,
+      "id": 2,
       "title": "Java",
       "image": "../images/java.jpg"
     },
     {
-      "id": 6,
+      "id": 3,
       "title": "Python",
       "image": "../images/python.jpg"
     }
