@@ -36,13 +36,13 @@ export default function Contact() {
         <Grid item xs={12} sm={6}>
   <Paper className={classes.paper}>
       <Typography variant="subtitle1" color="textPrimary" align="left">
-        Email: <a href='mailto:jukkasc2@gmail.com'>jukkasc2@gmail.com</a>
+        Email: <a href='mailto:ryanjms613@gmail.com'>ryanjms613@gmaill.com</a>
       </Typography>
       <Typography variant="subtitle1" color="textPrimary" align="left">
         Mobile: <a href='tel:6138660322'>613-866-0322</a>
       </Typography>
       <Typography variant="subtitle1" color="textPrimary" align="left">
-      Resume: <a href={Resume} target='_blank' rel="noreferrer">Resume2020</a>
+      Resume: <a href={Resume} target='_blank' rel="noreferrer">Resume2021</a>
       </Typography>
     </Paper>
         </Grid>
