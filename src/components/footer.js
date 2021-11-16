@@ -4,7 +4,7 @@ import "../styles/style.css";
 export default function Footer() {
   return (
     <footer className="footer" align="center">
-      <span>&copy; Ryan Schock 2020</span>
+      <span text-align="center">&copy; Ryan Schock 2021</span>
     </footer>
   );
 }

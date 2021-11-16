@@ -19,31 +19,13 @@ export default function Skills() {
   return (
     <div id="skills">
       <PageHeader title={"Skills"}>
-      {backEndSkills.map((BackEndSkills) => (
+      {frontEndSkills.map((FrontEndSkills) => (
           <Grid
             height="10%"
             width="10%"
             item
-            xs={6}
-            sm={6}
-            md={4}
-            lg={4}
-            xl={3}
-          >
-            <SkillsCard
-              title={BackEndSkills.title}
-              image={BackEndSkills.image}
-            />
-          </Grid>
-        ))}
-        <Divider />
-        {frontEndSkills.map((FrontEndSkills) => (
-          <Grid
-            height="10%"
-            width="10%"
-            item
-            xs={6}
-            sm={6}
+            xs={12}
+            sm={12}
             md={4}
             lg={4}
             xl={3}
@@ -51,6 +33,24 @@ export default function Skills() {
             <SkillsCard
               title={FrontEndSkills.title}
               image={FrontEndSkills.image}
+            />
+          </Grid>
+        ))}
+        <Divider />
+        {backEndSkills.map((BackEndSkills) => (
+          <Grid
+            height="10%"
+            width="10%"
+            item
+            xs={12}
+            sm={12}
+            md={4}
+            lg={4}
+            xl={3}
+          >
+            <SkillsCard
+              title={BackEndSkills.title}
+              image={BackEndSkills.image}
             />
           </Grid>
         ))}

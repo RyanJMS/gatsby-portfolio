@@ -20,11 +20,6 @@
       "image": "../images/mysql.jpg"
     },
     {
-      "id": 2,
-      "title": "Java",
-      "image": "../images/java.jpg"
-    },
-    {
       "id": 3,
       "title": "Python",
       "image": "../images/python.jpg"

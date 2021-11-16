@@ -31,7 +31,7 @@ export default function Contact() {
       <Grid container spacing={3} alignItems="center" direction="row"
   justify="center">
         <Grid item xs={12} sm={6}>
-           <img style={{ height: '50%', width: '50%', borderRadius: '50%' }} align="right" alt="Ryan Schock" src={ProfilePic}/>
+           <img style={{ height: '50%', width: '50%', borderRadius: '50%' }} align="center" alt="Ryan Schock" src={ProfilePic}/>
         </Grid>
         <Grid item xs={12} sm={6}>
   <Paper className={classes.paper}>
@@ -48,10 +48,6 @@ export default function Contact() {
         </Grid>
         <Grid item xs={12} sm={12}>
           <Paper className={classes.paper}>
-          <Button href="https://www.codewars.com/users/RyanJMS"
-            target="_blank"  rel="noreferrer" item xs={4} sm={4}>
-            <img  alt='codewars' src={CodeWars} />
-            </Button>
             <Button target='_blank' href="https://www.linkedin.com/in/ryanjmschock/" rel="noreferrer" item xs={4} sm={4}>
             <img alt='linkedin' src={Linkedin}  />
             </Button>

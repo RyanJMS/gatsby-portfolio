@@ -18,16 +18,6 @@
       "id": 4,
       "title": "React",
       "image": "../images/react-2.jpg"
-    },
-    {
-      "id": 5,
-      "title": "jQuery",
-      "image": "../images/jquery.jpg"
-    },
-    {
-      "id": 6,
-      "title": "Linux",
-      "image": "../images/linux.jpg"
     }
   ]
   

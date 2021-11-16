@@ -66,6 +66,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       display: "none",
     },
+    cursor: "pointer"
   },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
@@ -104,7 +105,7 @@ function ResponsiveDrawer(props) {
       <List>
         <ListItem
           component={Link}
-          to="/#about"
+          to="/#"
           style={{ textDecoration: "none" }}
           button
           key="About"
