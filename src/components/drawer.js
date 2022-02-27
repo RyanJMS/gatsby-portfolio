@@ -1,8 +1,9 @@
-import React, { useLayoutEffect, useState } from "react";
-import { Link } from 'gatsby'
-import PropTypes from "prop-types";
+import React, { useLayoutEffect, useState } from "react"
+import { Link } from "react-scroll"
+import PropTypes from "prop-types"
 import {
   AppBar,
+  Button,
   CssBaseline,
   Drawer,
   Hidden,
@@ -13,35 +14,37 @@ import {
   ListItemText,
   Toolbar,
   Typography,
-} from "@material-ui/core";
-import WorkIcon from "@material-ui/icons/Work";
-import LaptopIcon from "@material-ui/icons/Laptop";
-import MailIcon from "@material-ui/icons/Mail";
-import MenuIcon from "@material-ui/icons/Menu";
-import PersonIcon from "@material-ui/icons/Person";
-import SchoolIcon from '@material-ui/icons/School';
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import Footer from "./footer";
-import Structure from './structure'
-import Avatar from '../../static/images/avataaars.svg'
-
+} from "@material-ui/core"
+import WorkIcon from "@material-ui/icons/Work"
+import LaptopIcon from "@material-ui/icons/Laptop"
+import MailIcon from "@material-ui/icons/Mail"
+import MenuIcon from "@material-ui/icons/Menu"
+import PersonIcon from "@material-ui/icons/Person"
+import SchoolIcon from "@material-ui/icons/School"
+import { makeStyles, useTheme } from "@material-ui/core/styles"
+import Footer from "./footer"
+import Structure from "./structure"
+import Avatar from "../../static/images/avataaars.svg"
+import "../styles/style.css"
+import Github from "../../static/images/githubicon.png"
+import Linkedin from "../../static/images/linkedin.png"
 
 function useWindowSize() {
-  const [size, setSize] = useState([0, 0]);
+  const [size, setSize] = useState([0, 0])
   useLayoutEffect(() => {
     function updateSize() {
-      setSize([window.innerWidth, window.innerHeight]);
+      setSize([window.innerWidth, window.innerHeight])
     }
-    window.addEventListener("resize", updateSize);
-    updateSize();
-    return () => window.removeEventListener("resize", updateSize);
-  }, []);
-  return size;
+    window.addEventListener("resize", updateSize)
+    updateSize()
+    return () => window.removeEventListener("resize", updateSize)
+  }, [])
+  return size
 }
 
-const drawerWidth = 240;
+const drawerWidth = 240
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
   },
@@ -59,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: drawerWidth,
       backgroundColor: "DodgerBlue",
       color: "FloralWhite",
+      paddingBottom: "20px",
     },
   },
   menuButton: {
@@ -66,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       display: "none",
     },
-    cursor: "pointer"
+    cursor: "pointer",
   },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
@@ -79,19 +83,19 @@ const useStyles = makeStyles((theme) => ({
     background: "#B5DAFF",
     width: `calc(100% - ${drawerWidth}px)`,
   },
-}));
+}))
 
 function ResponsiveDrawer(props) {
-  useWindowSize();
+  useWindowSize()
 
-  const { window } = props;
-  const classes = useStyles();
-  const theme = useTheme();
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const { window } = props
+  const classes = useStyles()
+  const theme = useTheme()
+  const [mobileOpen, setMobileOpen] = React.useState(false)
 
   const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
+    setMobileOpen(!mobileOpen)
+  }
 
   const drawer = (
     <div id="toolbar">
@@ -103,73 +107,53 @@ function ResponsiveDrawer(props) {
       />
 
       <List>
-        <ListItem
-          component={Link}
-          to="/#"
-          style={{ textDecoration: "none" }}
-          button
-          key="About"
-        >
-          <ListItemIcon>
-            <PersonIcon />
-          </ListItemIcon>
-          <ListItemText primary="About" />
-        </ListItem>
-        <ListItem
-          component={Link}
-          to="/#projects"
-          style={{ textDecoration: "none" }}
-          button
-          key="Projects"
-        >
-          <ListItemIcon>
-            <WorkIcon />
-          </ListItemIcon>
-          <ListItemText primary="Projects" />
-        </ListItem>
-        <ListItem
-          component={Link}
-          to="/#skills"
-          style={{ textDecoration: "none" }}
-          button
-          key="Skills"
-        >
-          <ListItemIcon>
-            <LaptopIcon />
-          </ListItemIcon>
-          <ListItemText primary="Skills" />
-        </ListItem>
-        <ListItem
-          component={Link}
-          to="/#education"
-          style={{ textDecoration: "none" }}
-          button
-          key="Education"
-        >
-          <ListItemIcon>
-            <SchoolIcon />
-          </ListItemIcon>
-          <ListItemText primary="Education" />
-        </ListItem>
-        <ListItem
-          component={Link}
-          to="/#contact"
-          style={{ textDecoration: "none" }}
-          button
-          key="Contact"
-        >
-          <ListItemIcon>
-            <MailIcon />
-          </ListItemIcon>
-          <ListItemText primary="Contact" />
-        </ListItem>
+        <Link to="about" duration={1000} smooth="true">
+          <ListItem style={{ textDecoration: "none" }} button key="About">
+            <ListItemIcon>
+              <PersonIcon />
+            </ListItemIcon>
+            <ListItemText primary="About" />
+          </ListItem>
+        </Link>
+        <Link to="projects" duration={1000} smooth="true">
+          <ListItem style={{ textDecoration: "none" }} button key="Projects">
+            <ListItemIcon>
+              <WorkIcon />
+            </ListItemIcon>
+            <ListItemText primary="Projects" />
+          </ListItem>
+        </Link>
+        <Link to="skills" duration={1000} smooth="true">
+          <ListItem style={{ textDecoration: "none" }} button key="Skills">
+            <ListItemIcon>
+              <LaptopIcon />
+            </ListItemIcon>
+            <ListItemText primary="Skills" />
+          </ListItem>
+        </Link>
+        <Link to="education" duration={1000} smooth="true">
+          <ListItem style={{ textDecoration: "none" }} button key="Education">
+            <ListItemIcon>
+              <SchoolIcon />
+            </ListItemIcon>
+            <ListItemText primary="Education" />
+          </ListItem>
+        </Link>
+        <Link to="contact" duration={1000} smooth="true">
+          <ListItem style={{ textDecoration: "none" }} button key="Contact">
+            <ListItemIcon>
+              <MailIcon />
+            </ListItemIcon>
+            <ListItemText primary="Contact" />
+          </ListItem>
+        </Link>
       </List>
       <Footer />
     </div>
-  );
+  )
 
   const container =
-    window !== undefined ? () => window().document.body : undefined;
+    window !== undefined ? () => window().document.body : undefined
 
   return (
     <div className={classes.root}>
@@ -191,7 +175,7 @@ function ResponsiveDrawer(props) {
           </IconButton>
           <Typography
             variant="h6"
-            style={{ display: "inline-block", marginRight: 16 }}
+            style={{ display: "inline-block", marginRight: 25 }}
           >
             Ryan Schock
           </Typography>
@@ -200,8 +184,28 @@ function ResponsiveDrawer(props) {
             color="textSecondary"
             style={{ display: "inline-block" }}
           >
-            Full Stack Web Developer
+            Full Stack Developer
           </Typography>
+          <Button
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/ryanjms"
+          >
+            <img src={Github} alt="github" height="25px" width="25px" />
+          </Button>
+          <Button
+            target="_blank"
+            href="https://www.linkedin.com/in/ryanjmschock/"
+            rel="noreferrer"
+          >
+            <img
+              src={Linkedin}
+              alt="linkedin"
+              height="25px"
+              width="25px"
+              style={{ borderRadius: "25%" }}
+            />
+          </Button>
         </Toolbar>
       </AppBar>
       <nav className={classes.drawer} aria-label="pages">
@@ -237,10 +241,10 @@ function ResponsiveDrawer(props) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-            <Structure />
+        <Structure />
       </main>
     </div>
-  );
+  )
 }
 
 ResponsiveDrawer.propTypes = {
@@ -249,6 +253,6 @@ ResponsiveDrawer.propTypes = {
    * You won't need it on your project.
    */
   window: PropTypes.func,
-};
+}
 
-export default ResponsiveDrawer;
+export default ResponsiveDrawer

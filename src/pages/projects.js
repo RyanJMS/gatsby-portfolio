@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import projects from "../../static/data/projects.json";
+import React, { useState, useEffect } from "react"
+import projects from "../../static/data/projects.json"
 import {
   Grid,
   Card,
@@ -10,37 +10,48 @@ import {
   CardMedia,
   Button,
   Box,
-} from "@material-ui/core/";
+} from "@material-ui/core/"
 import PageHeader from "../components/page-header"
 
+import AOS from "aos"
+import "aos/dist/aos.css" // You can also use <link> for styles
+// ..
+AOS.init({
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: "ease", // default easing for AOS animations
+})
+
 export default function Project() {
-  const [projectData, setProjects] = useState([]);
+  const [projectData, setProjects] = useState([])
 
   useEffect(() => {
-    setProjects(projects);
-  }, []);
-  
+    setProjects(projects)
+  }, [])
 
   return (
     <div id="projects">
       <PageHeader title={"Projects"}>
-        {projectData.map((project) => (
+        {projectData.map(project => (
           <Grid item xs={12} sm={6}>
-            <Card>
+            <Card data-aos="fade-in">
               <CardMedia align="center">
-                <Box pt={2}> 
+                <Box pt={2}>
                   <img
                     src={project.image}
                     alt="projectImage"
                     height="50%"
                     width="50%"
-                    
                   />
                 </Box>
               </CardMedia>
               <CardHeader align="center" title={project.title} />
               <CardContent>
-                <Typography align="center" variant="body2" color="textPrimary" component="p">
+                <Typography
+                  align="center"
+                  variant="body2"
+                  color="textPrimary"
+                  component="p"
+                >
                   {project.description}
                 </Typography>
               </CardContent>
@@ -67,7 +78,7 @@ export default function Project() {
             </Card>
           </Grid>
         ))}
-    </PageHeader>
+      </PageHeader>
     </div>
-  );
+  )
 }

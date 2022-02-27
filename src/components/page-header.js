@@ -1,25 +1,19 @@
-import React from 'react'
-import { makeStyles } from "@material-ui/core/styles";
-import {
-    Grid,
-    Typography,
-    Box,
-    Divider
-  } from "@material-ui/core/";
+import React from "react"
+import { makeStyles } from "@material-ui/core/styles"
+import { Grid, Typography, Box, Divider } from "@material-ui/core/"
 
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-      padding: theme.spacing(2),
-    },
-  }));
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+    padding: theme.spacing(2),
+  },
+}))
 
 export default function PageHeader(props) {
-    const classes = useStyles();
-    return (
-        <div className={classes.root}>
-             <Grid
+  const classes = useStyles()
+  return (
+    <div className={classes.root}>
+      <Grid
         container
         spacing={2}
         direction="row"
@@ -28,14 +22,19 @@ export default function PageHeader(props) {
       >
         <Grid justify="center" item xs={12}>
           <Box pb={4} pt={6} justify="center">
-            <Typography align="center" variant="h3" style={{ fontWeight: "bold" }}>
+            <Typography
+              align="center"
+              variant="h3"
+              className="title"
+              style={{ fontWeight: "bold" }}
+            >
               {props.title}
             </Typography>
           </Box>
         </Grid>
         <Divider />
         {props.children}
-        </Grid>
-        </div>
-    )
+      </Grid>
+    </div>
+  )
 }
