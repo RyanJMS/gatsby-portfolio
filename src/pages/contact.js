@@ -57,7 +57,7 @@ export default function Contact() {
             <Typography variant="subtitle1" color="textPrimary" align="left">
               Resume:{" "}
               <a href={Resume} target="_blank" rel="noreferrer">
-                Resume2021
+                Ryan Schock Resume
               </a>
             </Typography>
           </Paper>

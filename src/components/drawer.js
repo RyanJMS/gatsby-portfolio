@@ -58,11 +58,10 @@ const useStyles = makeStyles(theme => ({
   appBar: {
     [theme.breakpoints.up("sm")]: {
       width: `calc(100% - ${drawerWidth}px)`,
-      height: "10%",
+      height: "50px",
       marginLeft: drawerWidth,
       backgroundColor: "DodgerBlue",
       color: "FloralWhite",
-      paddingBottom: "20px",
     },
   },
   menuButton: {
