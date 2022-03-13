@@ -35,7 +35,7 @@ export default function Project() {
       <PageHeader title={"Projects"}>
         {projectData.map(project => (
           <Grid item xs={12} sm={6}>
-            <Card data-aos="fade-in">
+            <Card data-aos="fade-in" style={{ height: 350 }}>
               <CardMedia align="center">
                 <Box pt={2}>
                   <img

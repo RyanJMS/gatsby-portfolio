@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
+    "image": "../images/workout-companion.png",
+    "title": "Workout Companion",
+    "description": "An app that allows users to search by body part and receive a list of exercises. Built with React, Material UI, and ExerciseDB API",
+    "repoLink": "https://github.com/RyanJMS/workout-companion",
+    "liveLink": "https://youthful-hugle-922ffd.netlify.app/"
+  },
+  {
+    "id": 2,
     "image": "../images/imdb.png",
     "title": "IMDB",
     "description": "An IMDb app used to search for films, built with the OMDb API, React, and Material UI.",
     "repoLink": "https://github.com/RyanJMS/imdb",
     "liveLink": "https://ryanjms.github.io/imdb/"
-  },
-  {
-    "id": 2,
-    "image": "../images/calculator.png",
-    "title": "Calculator",
-    "description": "A challenge from Frontend Mentor, building a calculator with 3 different color themes.",
-    "repoLink": "https://github.com/RyanJMS/traveladvisor",
-    "liveLink": "https://ryanjms.github.io/traveladvisor/"
   },
   {
     "id": 3,
