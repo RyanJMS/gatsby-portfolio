@@ -34,27 +34,16 @@ export default function Contact() {
       </Typography>
 
       <Grid container alignItems="center" direction="row">
-        <Grid item xs={12} sm={6} style={{ justify: "center", width: "100%" }}>
-          <img
-            style={{
-              height: "25%",
-              width: "60%",
-              borderRadius: "25%",
-            }}
-            alt="Ryan Schock"
-            src={ProfilePic}
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} alignItems="center">
           <Paper className={classes.paper}>
-            <Typography variant="subtitle1" color="textPrimary" align="left">
+            <Typography variant="subtitle1" color="textPrimary" align="center">
               Email:{" "}
               <a href="mailto:ryanjms613@gmail.com">ryanjms613@gmaill.com</a>
             </Typography>
-            <Typography variant="subtitle1" color="textPrimary" align="left">
+            <Typography variant="subtitle1" color="textPrimary" align="center">
               Mobile: <a href="tel:6138660322">613-866-0322</a>
             </Typography>
-            <Typography variant="subtitle1" color="textPrimary" align="left">
+            <Typography variant="subtitle1" color="textPrimary" align="center">
               Resume:{" "}
               <a href={Resume} target="_blank" rel="noreferrer">
                 Ryan Schock Resume
