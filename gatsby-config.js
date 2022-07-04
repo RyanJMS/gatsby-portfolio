@@ -12,7 +12,3 @@ module.exports = {
     `gatsby-plugin-sharp`,
   ],
 }
-
-module.exports = {
-  plugins: [`gatsby-plugin-fontawesome-css`],
-}
