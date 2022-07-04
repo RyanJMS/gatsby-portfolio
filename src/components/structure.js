@@ -1,5 +1,4 @@
 import React from "react"
-import About from "../pages/about"
 import Skills from "../pages/skills"
 import Projects from "../pages/projects"
 import Contact from "../pages/contact"
@@ -10,12 +9,7 @@ export default function Structure() {
   return (
     <div>
       <Container maxWidth="lg">
-        <br id="about" />
-        <br />
-        <br />
-        <About />
         <br id="projects" />
-        <br />
         <Projects />
         <br id="skills" />
         <br />

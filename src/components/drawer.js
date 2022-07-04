@@ -26,8 +26,6 @@ import Footer from "./footer"
 import Structure from "./structure"
 import Avatar from "../../static/images/avataaars.svg"
 import "../styles/style.css"
-import Github from "../../static/images/githubicon.png"
-import Linkedin from "../../static/images/linkedin.png"
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0])
@@ -106,14 +104,6 @@ function ResponsiveDrawer(props) {
       />
 
       <List>
-        <Link to="about" duration={1000} smooth="true">
-          <ListItem style={{ textDecoration: "none" }} button key="About">
-            <ListItemIcon>
-              <PersonIcon />
-            </ListItemIcon>
-            <ListItemText primary="About" />
-          </ListItem>
-        </Link>
         <Link to="projects" duration={1000} smooth="true">
           <ListItem style={{ textDecoration: "none" }} button key="Projects">
             <ListItemIcon>
@@ -190,20 +180,14 @@ function ResponsiveDrawer(props) {
             rel="noreferrer"
             href="https://github.com/ryanjms"
           >
-            <img src={Github} alt="github" height="25px" width="25px" />
+            <i class="fa-brands fa-github fa-xl"></i>
           </Button>
           <Button
             target="_blank"
             href="https://www.linkedin.com/in/ryanjmschock/"
             rel="noreferrer"
           >
-            <img
-              src={Linkedin}
-              alt="linkedin"
-              height="25px"
-              width="25px"
-              style={{ borderRadius: "25%" }}
-            />
+            <i class="fa-brands fa-linkedin fa-xl"></i>
           </Button>
         </Toolbar>
       </AppBar>
