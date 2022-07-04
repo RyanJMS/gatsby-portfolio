@@ -19,13 +19,14 @@ import WorkIcon from "@material-ui/icons/Work"
 import LaptopIcon from "@material-ui/icons/Laptop"
 import MailIcon from "@material-ui/icons/Mail"
 import MenuIcon from "@material-ui/icons/Menu"
-import PersonIcon from "@material-ui/icons/Person"
 import SchoolIcon from "@material-ui/icons/School"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
 import Footer from "./footer"
 import Structure from "./structure"
 import Avatar from "../../static/images/avataaars.svg"
 import "../styles/style.css"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { IconContext } from "react-icons"
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0])
@@ -147,50 +148,53 @@ function ResponsiveDrawer(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar
-        position="fixed"
-        className={classes.appBar}
-        style={{ backgroundColor: "DodgerBlue" }}
-      >
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            className={classes.menuButton}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            style={{ display: "inline-block", marginRight: 25 }}
-          >
-            Ryan Schock
-          </Typography>
-          <Typography
-            variant="h6"
-            color="textSecondary"
-            style={{ display: "inline-block" }}
-          >
-            Full Stack Developer
-          </Typography>
-          <Button
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/ryanjms"
-          >
-            <i class="fa-brands fa-github fa-xl"></i>
-          </Button>
-          <Button
-            target="_blank"
-            href="https://www.linkedin.com/in/ryanjmschock/"
-            rel="noreferrer"
-          >
-            <i class="fa-brands fa-linkedin fa-xl"></i>
-          </Button>
-        </Toolbar>
-      </AppBar>
+      <IconContext.Provider value={{ size: "2em" }}>
+        <AppBar
+          position="fixed"
+          className={classes.appBar}
+          style={{ backgroundColor: "DodgerBlue" }}
+        >
+          <Toolbar>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              className={classes.menuButton}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography
+              variant="h6"
+              style={{ display: "inline-block", marginRight: 25 }}
+            >
+              Ryan Schock
+            </Typography>
+            <Typography
+              variant="h6"
+              color="textSecondary"
+              style={{ display: "inline-block" }}
+            >
+              Full Stack Developer
+            </Typography>
+
+            <Button
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/ryanjms"
+            >
+              <FaGithub />
+            </Button>
+            <Button
+              target="_blank"
+              href="https://www.linkedin.com/in/ryanjmschock/"
+              rel="noreferrer"
+            >
+              <FaLinkedin />
+            </Button>
+          </Toolbar>
+        </AppBar>
+      </IconContext.Provider>
       <nav className={classes.drawer} aria-label="pages">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">

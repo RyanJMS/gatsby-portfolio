@@ -6,5 +6,13 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-material-ui`,`gatsby-transformer-sharp`, `gatsby-plugin-sharp`],
+  plugins: [
+    `gatsby-plugin-material-ui`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+  ],
+}
+
+module.exports = {
+  plugins: [`gatsby-plugin-fontawesome-css`],
 }

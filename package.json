@@ -20,6 +20,7 @@
     "aos": "^3.0.0-beta.6",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.7.0",
+    "gatsby-plugin-fontawesome-css": "^1.2.0",
     "gatsby-plugin-material-ui": "^2.1.10",
     "gatsby-plugin-sass": "^2.7.0",
     "gatsby-plugin-sharp": "^2.10.1",
@@ -27,6 +28,7 @@
     "node-sass": "^4.12.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-icons": "^4.4.0",
     "react-scroll": "^1.8.5"
   },
   "devDependencies": {
